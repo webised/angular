@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'watchanddestroy';
+  isAuth = false;
+
+  onAllumer(){
+        console.log('test');
+  }
 }
