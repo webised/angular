@@ -9,7 +9,21 @@ export class AppComponent {
   title = 'watchanddestroy';
   isAuth = false;
 
-  onAllumer(){
+  appareilOne = 'Machine à laver';
+
+  appareils = [
+      {
+       name: 'tv',
+       statut: 'allume'
+      },
+      {
+          name: 'box',
+          statut: 'eteinte'
+      }
+
+  ];
+
+  onAllumer() {
         console.log('test');
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-appareil',
@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./appareil.component.sass']
 })
 export class AppareilComponent implements OnInit {
-
+  title = 'mon titre';
+  @Input() appareilName: string;
   constructor() { }
+
 
   ngOnInit() {
   }
