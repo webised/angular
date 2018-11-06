@@ -13,8 +13,8 @@ export class AppComponent {
 
   appareils = [
       {
-       name: 'tv',
-       statut: 'allume'
+          name: 'tv',
+          statut: 'allume'
       },
       {
           name: 'box',

@@ -23,10 +23,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <app-appareil [appareilName]="appareilOne"></app-appareil>
-      <app-appareil></app-appareil>
-      <app-appareil></app-appareil>
-      <app-appareil></app-appareil>
+      <app-appareil *ngFor="let appareil of appareils" [appareilName]="appareil.name" [appareilStatut]="appareil.statut"></app-appareil>
       <button class="btn btn-success" (click)="onAllumer()">Tout allumer</button>
     </div>
   </div>
